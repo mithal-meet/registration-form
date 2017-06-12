@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Name</th>
+
+    <th> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; email</th>
+
+  </tr>
+  <% @users.each do |u| %>
+    <tr>
+      <td><%= u.name %></td>
+       <td><%= u.email %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @users %>
