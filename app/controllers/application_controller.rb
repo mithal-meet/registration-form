@@ -16,19 +16,17 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_in) << :date_of_birth
     devise_parameter_sanitizer.for(:account_update) << :date_of_birth
 
-     devise_parameter_sanitizer.for(:sign_up) << :address
+    devise_parameter_sanitizer.for(:sign_up) << :image
+    devise_parameter_sanitizer.for(:sign_in) << :image
+    devise_parameter_sanitizer.for(:account_update) << :image
+    
+    devise_parameter_sanitizer.for(:sign_up) << :address
     devise_parameter_sanitizer.for(:sign_in) << :address
     devise_parameter_sanitizer.for(:account_update) << :address
 
     devise_parameter_sanitizer.for(:sign_up) << :phone
     devise_parameter_sanitizer.for(:sign_in) << :phone
     devise_parameter_sanitizer.for(:account_update) << :phone
-
-
-    devise_parameter_sanitizer.for(:sign_up) << :image
-    devise_parameter_sanitizer.for(:sign_in) << :image
-    devise_parameter_sanitizer.for(:account_update) << :image
- 
     
   end
   
