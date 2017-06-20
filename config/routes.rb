@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
+
+  devise_for :users,:path_prefix => 'my'
+
+resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,8 +57,12 @@ Rails.application.routes.draw do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
-  #   end
-  get '/static_pages/show'
-  root 'static_pages#home'
-  #get 'static_pages#list'
+  #   endget '/static_pages/show'
+ get '/static_pages/show'
+  #match '/static_pages/edit/:id' => 'devise/registrations#edit', :via => :get, :as => :static_pages_edit_path
+  delete 'static_pages/users/destroy/:id' =>  'users#destroy'
+  
+ 
+
+  root 'static_pages#home' #get 'static_pages#list'
 end

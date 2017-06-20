@@ -6,6 +6,7 @@ task :test2 => :environment do
     	@user.id = i
     	@user.name = Faker::Name.name
     	@user.email = Faker::Internet.email(@user.name)
+        @user.date_of_birth=Faker::Date.birthday(18, 65)
     	@user.phone = Faker::PhoneNumber.cell_phone
     	@user.password = "12345678"
     	@user.password_confirmation = "12345678"
