@@ -30,6 +30,21 @@ end
  
   redirect_to root_path
 end
+def block
+    @u = User.find(params[:id])
+    #puts (@u.id)
+    @u.banned = true
+    @u.save
+
+ end
+
+ def unblock
+    @u = User.find(params[:id])
+    #puts (@u.id)
+    @u.banned = false
+    @u.save
+
+ end
 
      private
 

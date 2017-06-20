@@ -23,6 +23,11 @@
         <!--<td><%#= link_to 'Edit', static_pages_edit_path(idea) %></td> -->
         <td><%= link_to 'Destroy', "users/destroy/#{idea.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
           <td><%= link_to 'edit', edit_user_path(idea) %></td>
+          <td><%= link_to 'Block', "static_pages/block/#{idea.id}", method: :get, data: { confirm: 'Are you sure?' } %>
+            </td>
+
+ <td><% if (idea.banned?) %> <%= link_to 'Unblock', "static_pages/unblock/#{idea.id}", method: :get, data: { confirm: 'Are you sure?' } %> <% end %></td>
+          
         
       </tr>
     <% end %>

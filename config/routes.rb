@@ -62,7 +62,11 @@ resources :users
   #match '/static_pages/edit/:id' => 'devise/registrations#edit', :via => :get, :as => :static_pages_edit_path
   delete 'static_pages/users/destroy/:id' =>  'users#destroy'
   
- 
+ get 'static_pages/block/:id' =>  'static_pages#block'
+  get 'static_pages/static_pages/block/:id' =>  'static_pages#block'
+
+  get 'static_pages/unblock/:id' =>  'static_pages#unblock'
+  get 'static_pages/static_pages/unblock/:id' =>  'static_pages#unblock'
 
   root 'static_pages#home' #get 'static_pages#list'
 end
