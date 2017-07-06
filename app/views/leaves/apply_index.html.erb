@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Leaves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Type</th>
+      <th>Duration</th>
+      <th>User</th>
+      
+      
+
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leaves.each do |leave| %>
+      <tr>
+         <% @u = User.find(leave.user_id) %>
+         <td><%= @u.name %></td>
+        <td><%= leave.leave_type %></td>
+        <td><%= leave.duration %></td>
+        <td><%= leave.user_id %></td>
+        <td><%= link_to 'Approve', "/approve/#{leave.id}", data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', leave, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

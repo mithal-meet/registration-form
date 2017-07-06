@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
 
+  resources :user_leaves
+  resources :leaves
   devise_for :users,:path_prefix => 'my'
 
 resources :users
@@ -65,8 +67,12 @@ resources :users
  get 'static_pages/block/:id' =>  'static_pages#block'
   get 'static_pages/static_pages/block/:id' =>  'static_pages#block'
 
+  get 'approve/:id' => 'leaves#approve_leave'
+
   get 'static_pages/unblock/:id' =>  'static_pages#unblock'
   get 'static_pages/static_pages/unblock/:id' =>  'static_pages#unblock'
+
+  get 'xx/leaves/applyindex' => 'leaves#apply_index'
 
   root 'static_pages#home' #get 'static_pages#list'
 end

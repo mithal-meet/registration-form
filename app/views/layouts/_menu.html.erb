@@ -12,8 +12,18 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+             <% if !current_user %>
             <li><%= link_to 'Register', new_user_registration_path %></li>
+            <% end %>
+ 
             <% if current_user %>
+
+            <% if current_user.admin == true %>
+
+                 <li><%= link_to 'leaves applied','/xx/leaves/applyindex' %></li>
+            <% end %>
+            
+                 <li><%= link_to 'Apply Leave',new_leave_path %></li>
                 <li><%= link_to 'Edit Profile',edit_user_registration_path %></li>
                 <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
             <% else %>

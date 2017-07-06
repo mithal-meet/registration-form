@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170620065347) do
+ActiveRecord::Schema.define(version: 20170705073958) do
+
+  create_table "leaves", force: :cascade do |t|
+    t.string   "leave_type"
+    t.integer  "duration"
+    t.integer  "user_id"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "status",     default: false
+  end
+
+  create_table "user_leaves", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "leave_type"
+    t.integer  "leave_taken"
+    t.integer  "leave_left"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -37,7 +55,7 @@ ActiveRecord::Schema.define(version: 20170620065347) do
     t.string   "address"
     t.string   "phone"
     t.boolean  "admin",                  default: false
-    t.boolean  "banned",                 default: false
+    t.boolean  "banned",                 default: true
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

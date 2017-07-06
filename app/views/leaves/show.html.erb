@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>leave_type:</strong>
+  <%= @leave.leave_type %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @leave.duration %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @leave.user_id %>
+</p>
+<p>
+  <strong>status:</strong>
+  <% if @leave.status == false %>
+  <%= "pending" %>
+  <% else %>
+  <%= "approved" %>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_leave_path(@leave) %> |
+<%= link_to 'Back', leaves_path %>

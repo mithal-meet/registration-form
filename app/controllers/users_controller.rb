@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
 
+ before_filter :verify_is_admin, :only => [:update, :destroy, :edit]
+
+
 def destroy
 	@u =User.find(params[:id])
 	@u.destroy
