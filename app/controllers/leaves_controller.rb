@@ -26,6 +26,7 @@ class LeavesController < ApplicationController
     
   end
   def approve_leave
+
     @leave = Leave.find(params[:id])
     @leave.status = true
     @u = User.find(@leave.user_id)
@@ -35,6 +36,7 @@ class LeavesController < ApplicationController
         @ul1.leave_left = @ul1.leave_left - @leave.duration
         @ul1.save
     @leave.save
+      LeaveMailer.approve_leave_mail(@leave).deliver_later
   end
   # POST /leaves
   # POST /leaves.json
@@ -45,6 +47,8 @@ class LeavesController < ApplicationController
     @leave = current_user.leaves.create(leave_params) 
 
     respond_to do |format|
+      @leave.duration=(@leave.to_date - @leave.from_date).to_i
+
       if @leave.save
          LeaveMailer.welcome_email(@leave).deliver_later
         format.html { redirect_to @leave, notice: 'Leave was successfully applied.' }
@@ -92,6 +96,6 @@ class LeavesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def leave_params
-      params.require(:leave).permit(:leave_type, :duration, :user_id)
+      params.require(:leave).permit(:leave_type, :from_date, :to_date, :duration, :user_id)
     end
 end

@@ -1,7 +1,11 @@
+
+
+
+
 <%= form_for(@leave) do |f| %>
   <% if @leave.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@leave.errors.count, "error") %> prohibited this leave from being saved:</h2>
+    <div id="error_explanation" style="border-radius: 10px;padding: 6px;margin-left: 430px;">
+      <h2 style="text-align: center;"><%= pluralize(@leave.errors.count, "error") %> prohibited this leave from being saved:</h2>
 
       <ul>
       <% @leave.errors.full_messages.each do |message| %>
@@ -13,12 +17,22 @@
 
   <div class="field">
     <%= f.label :leave_type %><br>
-    <%= f.text_field :leave_type %>
+    <!--<#%= f.text_field :leave_type %> -->
+   <%= f.select :leave_type, ['choose leave_type', 'CL', 'SL', 'PL', 'ML','UL'] %>
   </div>
+  
   <div class="field">
-    <%= f.label :duration %><br>
-    <%= f.number_field :duration %>
+  <%= f.label :from_date %>
+  <br>
+  <%= f.date_select :from_date %>
   </div>
+ 
+  <div class="field">
+  <%= f.label :to_date %>
+  <br>
+  <%= f.date_select :to_date %>
+  </div>
+ 
   <div class="actions">
     <%= f.submit %>
   </div>

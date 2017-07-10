@@ -18,4 +18,12 @@ class ApplicationMailer < ActionMailer::Base
     mail(from: @user.email , to: @adminp.email, subject: 'user approval')
   end
 
+   def approve_leave_mail(leave)
+      @user = User.find(leave.user_id)
+    @admint = User.where(:admin => true)
+    @adminp =@admint[0]
+    #@url  = 'http://example.com/login'
+    mail(from: @adminp.email , to: @user.email, subject: 'user approval')
+  end
+
 end

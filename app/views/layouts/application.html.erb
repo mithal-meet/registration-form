@@ -34,13 +34,39 @@
     <p>
   <strong>Image:</strong>
   <%= image_tag current_user.image.thumb.url %>
+  
 </p>
+<table align="center">
+  <thead>
+    <tr>
+      <th>&nbsp;leave_type</th>
+      <th>&nbsp;&nbsp;leave_taken</th>
+      <th>&nbsp;&nbsp;leave_left</th>
+     
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% current_user.user_leaves.each do |leave| %>
+
+      <tr>
+        <td><%= leave.leave_type %></td>
+        <td><%= leave.leave_taken %></td>
+        <td><%= leave.leave_left%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 
 <% else %>
     <!--%= link_to 'Login', new_user_session_path %-->
 <% end %>
 
  <%= yield %>
+
+
 
 </body>
 </html>

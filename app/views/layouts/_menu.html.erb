@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button-->
-        <%= link_to "Students Registration", root_path, class: 'navbar-brand' %>
+        <%= link_to "Leave management system", root_path, class: 'navbar-brand' %>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -19,7 +19,7 @@
             <% if current_user %>
 
             <% if current_user.admin == true %>
-
+                    <li><%= link_to 'leaves status', user_leaves_path %></li>
                  <li><%= link_to 'leaves applied','/xx/leaves/applyindex' %></li>
             <% end %>
             

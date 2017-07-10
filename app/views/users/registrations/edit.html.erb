@@ -1,3 +1,14 @@
+<html>
+<head>
+<style>
+
+body{
+  background-image: url(/assets/index2.jpg); 
+}
+
+</style>
+</head>
+<body>
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -57,3 +68,5 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+</body>
+</html>
