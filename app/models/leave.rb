@@ -9,6 +9,11 @@ validate :priv_leave
 validate :from_to
 validate :select_ltype
 
+def start_time
+	self.from_date
+
+end
+
 def from_to
 if (self.from_date >= self.to_date)
 	self.errors.add(:duration, "invalid date to and from date")

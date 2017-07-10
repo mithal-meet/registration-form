@@ -20858,3 +20858,484 @@ Completed 200 OK in 124ms (Views: 107.1ms | ActiveRecord: 0.5ms)
 
 
 Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 11:47:56 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 12:28:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered static_pages/home.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+  [1m[36mUserLeave Load (0.3ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 1833ms (Views: 1680.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:28:27 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:28:32 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (943.8ms)
+  Rendered leaves/new.html.erb within layouts/application (956.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 1134ms (Views: 1088.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:29:37 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (21.7ms)
+  Rendered leaves/new.html.erb within layouts/application (22.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 128ms (Views: 122.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:29:37 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:31:43 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (16.3ms)
+  Rendered leaves/new.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 129ms (Views: 123.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:31:43 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:33:42 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (24.6ms)
+  Rendered leaves/new.html.erb within layouts/application (28.5ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 133ms (Views: 127.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:33:42 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:34:45 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (20.5ms)
+  Rendered leaves/new.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 131ms (Views: 123.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:34:46 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:36:21 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (21.4ms)
+  Rendered leaves/new.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 127ms (Views: 120.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:36:21 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:36:54 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (17.5ms)
+  Rendered leaves/new.html.erb within layouts/application (23.8ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 133ms (Views: 128.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:36:54 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:37:33 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (25.1ms)
+  Rendered leaves/new.html.erb within layouts/application (31.2ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 141ms (Views: 134.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:37:33 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:38:08 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (27.9ms)
+  Rendered leaves/new.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 121ms (Views: 116.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:38:09 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:38:57 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (21.6ms)
+  Rendered leaves/new.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 148ms (Views: 142.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:38:58 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:39:11 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (22.3ms)
+  Rendered leaves/new.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 138ms (Views: 131.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:39:12 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:40:03 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (22.1ms)
+  Rendered leaves/new.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 146ms (Views: 139.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:40:03 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:40:06 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (22.8ms)
+  Rendered leaves/new.html.erb within layouts/application (26.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 149ms (Views: 140.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:40:06 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:41:01 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (23.5ms)
+  Rendered leaves/new.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 141ms (Views: 135.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:41:01 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:41:21 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (24.1ms)
+  Rendered leaves/new.html.erb within layouts/application (31.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 141ms (Views: 133.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:41:22 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:41:58 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (13.9ms)
+  Rendered leaves/new.html.erb within layouts/application (33.3ms)
+  Rendered layouts/_menu.html.erb (4.9ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 143ms (Views: 137.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:41:59 +0530
+
+
+Started POST "/leaves" for 127.0.0.1 at 2017-07-10 12:42:17 +0530
+Processing by LeavesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U5+FNoZV28DcrkJATHP5hAWxwFBOi7KttVggDZxn+q/fh249JKEXL276hQKlxd6EYaMDBq7JM8YbNKIRhrFjbg==", "leave"=>{"leave_type"=>"PL", "from_date(1i)"=>"2017", "from_date(2i)"=>"7", "from_date(3i)"=>"10", "to_date(1i)"=>"2017", "to_date(2i)"=>"7", "to_date(3i)"=>"10"}, "commit"=>"Create Leave"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserLeave Load (0.3ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ? AND "user_leaves"."leave_type" = ?  [["user_id", 6], ["leave_type", "PL"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ? AND "user_leaves"."leave_type" = ?  [["user_id", 6], ["leave_type", "PL"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered leaves/_form.html.erb (10.9ms)
+  Rendered leaves/new.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 160ms (Views: 120.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:42:17 +0530
+
+
+Started GET "/leaves" for 127.0.0.1 at 2017-07-10 12:43:12 +0530
+Processing by LeavesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mLeave Load (0.2ms)[0m  [1mSELECT "leaves".* FROM "leaves"[0m
+  Rendered leaves/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[35mUserLeave Load (0.1ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?  [["user_id", 6]]
+Completed 200 OK in 122ms (Views: 115.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leaves" for 127.0.0.1 at 2017-07-10 12:43:32 +0530
+Processing by LeavesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mLeave Load (0.2ms)[0m  SELECT "leaves".* FROM "leaves"
+  Rendered leaves/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 113ms (Views: 108.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:43:35 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (5.8ms)
+  Rendered leaves/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (3.3ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 115ms (Views: 108.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:43:35 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:43:48 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (16.4ms)
+  Rendered leaves/new.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 117ms (Views: 112.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:43:49 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:43:52 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (14.5ms)
+  Rendered leaves/new.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 127ms (Views: 122.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:43:52 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:43:55 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered leaves/_form.html.erb (8.9ms)
+  Rendered leaves/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 157ms (Views: 151.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/leaves" for 127.0.0.1 at 2017-07-10 12:44:00 +0530
+Processing by LeavesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Ob5GM0bqyIiWlVpiu8yQfzohbrCGp3aIeFUaFLQnmxg/hITb+9nzZAOkitjWRVBmPpG7CJYHLGPjdZ0SAYHrQ==", "leave"=>{"leave_type"=>"choose leave_type", "from_date(1i)"=>"2017", "from_date(2i)"=>"7", "from_date(3i)"=>"10", "to_date(1i)"=>"2017", "to_date(2i)"=>"7", "to_date(3i)"=>"10"}, "commit"=>"Create Leave"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (6.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered leaves/_form.html.erb (22.2ms)
+  Rendered leaves/new.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  [1m[36mUserLeave Load (1.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 185ms (Views: 163.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:44:00 +0530
+
+
+Started GET "/leaves" for 127.0.0.1 at 2017-07-10 12:44:04 +0530
+Processing by LeavesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mLeave Load (0.2ms)[0m  [1mSELECT "leaves".* FROM "leaves"[0m
+  Rendered leaves/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[35mUserLeave Load (0.2ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?  [["user_id", 6]]
+Completed 200 OK in 143ms (Views: 131.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:45:44 +0530
+Processing by LeavesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered leaves/_form.html.erb (14.5ms)
+  Rendered leaves/new.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  [1m[35mUserLeave Load (0.1ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?  [["user_id", 6]]
+Completed 200 OK in 145ms (Views: 142.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:45:44 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:55:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mLeave Load (0.3ms)[0m  [1mSELECT "leaves".* FROM "leaves" WHERE "leaves"."user_id" = ?[0m  [["user_id", 6]]
+  Rendered /home/mithal/.rvm/gems/ruby-2.2.1@rails425/gems/simple_calendar-2.2.6/app/views/simple_calendar/_month_calendar.html.erb (24.5ms)
+  Rendered leaves/_form.html.erb (1251.7ms)
+  Rendered leaves/new.html.erb within layouts/application (1260.2ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+  [1m[35mUserLeave Load (0.2ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?  [["user_id", 6]]
+Completed 200 OK in 4164ms (Views: 4035.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:55:22 +0530
+
+
+Started POST "/leaves" for 127.0.0.1 at 2017-07-10 12:56:13 +0530
+Processing by LeavesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I18NeC3gn5rLvLaKV0ZTpBbiivezfUBGtJaF1yioiICvR+ZzjxRTdXnocci+8HSkcvBJoVM/wS0a+gfLMn4RQQ==", "leave"=>{"leave_type"=>"SL", "from_date(1i)"=>"2017", "from_date(2i)"=>"7", "from_date(3i)"=>"12", "to_date(1i)"=>"2017", "to_date(2i)"=>"7", "to_date(3i)"=>"13"}, "commit"=>"Create Leave"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserLeave Load (0.2ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ? AND "user_leaves"."leave_type" = ?[0m  [["user_id", 6], ["leave_type", "SL"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mLeave Load (0.2ms)[0m  [1mSELECT "leaves".* FROM "leaves" WHERE "leaves"."user_id" = ? AND "leaves"."leave_type" = ? AND "leaves"."status" = ?[0m  [["user_id", 6], ["leave_type", "SL"], ["status", "t"]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "leaves" ("leave_type", "from_date", "to_date", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["leave_type", "SL"], ["from_date", "2017-07-12"], ["to_date", "2017-07-13"], ["user_id", 6], ["created_at", "2017-07-10 07:26:13.141085"], ["updated_at", "2017-07-10 07:26:13.141085"]]
+  [1m[36m (24.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ? AND "user_leaves"."leave_type" = ?[0m  [["user_id", 6], ["leave_type", "SL"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mLeave Load (0.1ms)[0m  [1mSELECT "leaves".* FROM "leaves" WHERE "leaves"."user_id" = ? AND "leaves"."leave_type" = ? AND "leaves"."status" = ?[0m  [["user_id", 6], ["leave_type", "SL"], ["status", "t"]]
+  [1m[35mSQL (2.0ms)[0m  UPDATE "leaves" SET "duration" = ?, "updated_at" = ? WHERE "leaves"."id" = ?  [["duration", 1], ["updated_at", "2017-07-10 07:26:13.174852"], ["id", 27]]
+  [1m[36m (49.6ms)[0m  [1mcommit transaction[0m
+[ActiveJob]   [1m[35mLeave Load (0.2ms)[0m  SELECT  "leaves".* FROM "leaves" WHERE "leaves"."id" = ? LIMIT 1  [["id", 27]]
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "LeaveMailer", "welcome_email", "deliver_now", gid://devise-config/Leave/27
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f]   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f]   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."admin" = ?  [["admin", "t"]]
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f]   Rendered leave_mailer/welcome_email.html.erb (0.6ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f] 
+LeaveMailer#welcome_email: processed outbound mail in 343.2ms
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f] 
+Sent mail to meet@gmail.com (11107.8ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f] Date: Mon, 10 Jul 2017 12:56:13 +0530
+From: leone.jacobson.v@mitchell.com
+To: meet@gmail.com
+Message-ID: <59632c15e4a60_172225343ace587cb@mithal-VirtualBox.mail>
+Subject: applied for leave
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, </h1>
+    <p>
+      You have successfully signed up to example.com,
+      your username is: <br>
+    </p>
+    <p>
+      To login to the site, just follow this link: 
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+
+    
+    <p>
+      To approve the request for leave of the employee follow this link <a href="http://localhost:3000/leaves"> click here</a>
+    </p>
+    
+  </body>
+</html>
+[ActiveJob] [ActionMailer::DeliveryJob] [310ff2fe-2911-41d5-9284-9b67668d1d8f] Performed ActionMailer::DeliveryJob from Inline(mailers) in 11452.9ms
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 310ff2fe-2911-41d5-9284-9b67668d1d8f) to Inline(mailers) with arguments: "LeaveMailer", "welcome_email", "deliver_now", gid://devise-config/Leave/27
+Redirected to http://localhost:3000/leaves/27
+Completed 302 Found in 11912ms (ActiveRecord: 78.0ms)
+
+
+Started GET "/leaves/27" for 127.0.0.1 at 2017-07-10 12:56:25 +0530
+Processing by LeavesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mLeave Load (0.1ms)[0m  SELECT  "leaves".* FROM "leaves" WHERE "leaves"."id" = ? LIMIT 1  [["id", 27]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered leaves/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[35mUserLeave Load (0.2ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?  [["user_id", 6]]
+Completed 200 OK in 139ms (Views: 129.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:56:30 +0530
+Processing by LeavesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mLeave Load (0.1ms)[0m  SELECT "leaves".* FROM "leaves" WHERE "leaves"."user_id" = ?  [["user_id", 6]]
+  Rendered /home/mithal/.rvm/gems/ruby-2.2.1@rails425/gems/simple_calendar-2.2.6/app/views/simple_calendar/_month_calendar.html.erb (23.5ms)
+  Rendered leaves/_form.html.erb (41.8ms)
+  Rendered leaves/new.html.erb within layouts/application (42.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mUserLeave Load (0.1ms)[0m  [1mSELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?[0m  [["user_id", 6]]
+Completed 200 OK in 175ms (Views: 172.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:56:30 +0530
+
+
+Started GET "/leaves/new" for 127.0.0.1 at 2017-07-10 12:58:15 +0530
+Processing by LeavesController#new as HTML
+  [1m[35mUser Load (6.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mLeave Load (0.1ms)[0m  [1mSELECT "leaves".* FROM "leaves" WHERE "leaves"."user_id" = ?[0m  [["user_id", 6]]
+  Rendered /home/mithal/.rvm/gems/ruby-2.2.1@rails425/gems/simple_calendar-2.2.6/app/views/simple_calendar/_month_calendar.html.erb (20.0ms)
+  Rendered leaves/_form.html.erb (59.2ms)
+  Rendered leaves/new.html.erb within layouts/application (61.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[35mUserLeave Load (0.1ms)[0m  SELECT "user_leaves".* FROM "user_leaves" WHERE "user_leaves"."user_id" = ?  [["user_id", 6]]
+Completed 200 OK in 176ms (Views: 165.0ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/index2.jpg" for 127.0.0.1 at 2017-07-10 12:58:15 +0530
